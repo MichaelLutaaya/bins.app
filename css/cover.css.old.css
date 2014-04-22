@@ -1,0 +1,288 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  width:100%;
+  /*background-color: #333;*/
+  /*background-color: #f7f7f7;*/
+  background-color: #74CE6D;
+
+}
+body {
+  /*color: #222;*/
+  /*color: #000;*/
+  color:#fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  /*box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
+  /*overflow:auto;*/
+  /*-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+.shadow {
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  /*color: #999;  IE8 proofing*/
+  /*color:#333;*/
+  /*color: rgba(255,255,255,.5);*/
+  color:#fff;
+  /*color:rgba(0, 0, 0, .5);*/
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    /*position: fixed;*/
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    /*width: 700px;*/
+    width:960px;
+  }
+}
+
+/**
+ * My Customizations
+ */
+             body {
+                font-family:Avenir;
+            }
+
+            .logoName h1 {
+                font-weight:600;
+                font-family:Avenir-Medium;
+            }
+
+            .mastfoot a {
+                text-decoration: underline;
+            }
+
+            .mastfoot a:hover {
+                text-decoration: none;
+            }
+
+            /*.logoName img {*/
+                /*box-shadow: 0 2px 4px rgba(0,0,0,.5);*/
+            /*}*/
+
+            .appDescription h2, h4  {
+                font-weight:100;
+                /*margin-top:25px;*/
+                /*margin-bottom:25px;*/
+            }
+
+            /*#emailAddress {*/
+                /*padding:;*/
+            /*}*/
+
+            #mailingList {
+                margin-top:28px;
+                color:#000;
+                /*background-color:#B4D6B2;*/
+                /*background-color: rgb(180, 214, 179);*/
+                /*background-color: rgba(180, 214, 179, 0.75);*/
+                /*background-color:#b4c2bf;*/
+                /*background-color: #fff;*/
+                /*border: 1px solid #424F41;*/
+                border: none; /*1px solid rgba(66, 124, 65, 0.8);*/
+                border-radius: 15px;
+                /*background-color: #B4C6B2;*/
+                /*border: 1px solid #89A388;*/
+                /*#495748;*/
+                /*background-color: #DBDDDE;*/
+                background-color: #fff;
+                box-shadow: 0 2px 4px rgba(0,0,0,.5);
+            }
+
+            #mailingList .btn {
+                  color: #fff;
+                  /*background-color: #74CE6D;*/
+                  /*background-color: #439B6F;*/
+                  /*background-color: #0D683B;*/
+                  background-color: #3d8138;
+                  /*background-color: #579b52;*/
+                  /*background-color: #c1db69;*/
+                  border: none;/*1px solid #495748;*/
+                  /*display: block;*/
+                  /*border-color: #ccc;*/
+            }
+
+            #mailingList .btn:hover {
+                background-color: #3d7138;
+            }
+
+            .social {
+                margin-bottom:20px;
+            }
+
+            .social img {
+                margin: 0 14px;
+            }
+
+            #mailingList h4 { padding-bottom: 6px; padding-left:10px; padding-right: 10px; text-shadow:none; font-weight: 500;}
+
+            @media(min-width: 768px) {
+                /*.leftColumn{float:left; width:375px; display: table-cell;}*/
+                /*.rightColumn{ display:table-cell; vertical-align: middle;}*/
+                .wrapperDawg { display:table; }
+                .mobileScreenshot{display: none;}
+            }
+            @media(max-width: 767px) {
+                /*.leftColumn{display:none;}*/
+                .appDescription h2 {font-size: 22px; margin: 40px 20px;}
+                .inner { padding: 12px;}
+                #mailingList .btn {  display: block;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;}
+                #mailingList { padding: 24px;}
+                #emailAddress {  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  /*line-height: 46px;*/
+  border-radius: 6px;}
+                /*.appStoreLink {margin:40px 0 15px 0;}*/
+
+                /*#mailingList .btn {*/
+                      /*padding: 10px 16px;*/
+  /*font-size: 18px;*/
+  /*line-height: 1.33;*/
+  /*border-radius: 6px;*/
+  /*font-weight:bold;*/
+                /*}*/
+            }
