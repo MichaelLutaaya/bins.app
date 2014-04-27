@@ -3,25 +3,24 @@
  */
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url('../fonts/montserrat-regular-webfont.eot'); /* IE9 Compat Modes */
-	src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('../fonts/montserrat-regular-webfont.woff') format('woff'), /* Modern Browsers */
-	     url('../fonts/montserrat-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-		 url('../fonts/montserrat-regular-webfont.svg#montserratregular') format('svg'); /* Legacy iOS */
-	font-weight: normal;
+  font-weight: normal;
+  font-family: 'Montserrat';
+  src: url('../fonts/montserrat-regular-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-regular-webfont.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-regular-webfont.svg#montserratregular') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
-	font-family: 'Montserrat Bold';
-	src: url('../fonts/montserrat-bold-webfont.eot'); /* IE9 Compat Modes */
-	src: url('../fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('../fonts/montserrat-bold-webfont.woff') format('woff'), /* Modern Browsers */
-	     url('../fonts/montserrat-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-		 url('../fonts/montserrat-bold-webfont.svg#montserratbold') format('svg'); /* Legacy iOS */
-	font-weight: bold;
+  font-weight: bold;
+  font-family: 'Montserrat Bold';
+  src: url('../fonts/montserrat-bold-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-bold-webfont.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-bold-webfont.svg#montserratbold') format('svg'); /* Legacy iOS */
 }
-
 
 /* Links */
 a,
@@ -34,10 +33,10 @@ a:hover {
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
+  border: 1px solid #fff;
+  background-color: #fff;
   color: #333;
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
 }
 
 /*
@@ -46,8 +45,8 @@ a:hover {
 
 html,
 body {
-  height: 100%;
   width:100%;
+  height: 100%;
   background-color: #74CE6D;
   color:#fff;
   text-align: center;
@@ -57,9 +56,9 @@ body {
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
+  min-height: 100%;
   width: 100%;
   height: 100%; /* For at least Firefox */
-  min-height: 100%;
 
 }
 .site-wrapper-inner {
@@ -97,22 +96,22 @@ body {
 .masthead-nav > li > a {
   padding-right: 0;
   padding-left: 0;
-  font-size: 16px;
-  font-weight: bold;
+  border-bottom: 2px solid transparent;
   color: #fff; /* IE8 proofing */
   color: rgba(255,255,255,.75);
-  border-bottom: 2px solid transparent;
+  font-weight: bold;
+  font-size: 16px;
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
-  background-color: transparent;
   border-bottom-color: rgba(255,255,255,.25);
+  background-color: transparent;
 }
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
-  color: #fff;
   border-bottom-color: #fff;
+  color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -166,7 +165,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-	width:960px;
+  width:960px;
   }
 }
 
@@ -177,7 +176,7 @@ body {
     font-family:Avenir, Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.logoName h1 {
+#identity h1 {
     font-weight:600;
     font-family:Avenir-Medium, Avenir, "Montserrat Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -190,77 +189,93 @@ body {
     text-decoration: none;
 }
 
-.appDescription h2, h4  {
+#purpose h2, h4  {
     font-weight:100;
 }
 
 #mailingList {
     margin-top:28px;
-    color:#000;
     border: none;
     border-radius: 15px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,.5);
+    color:#000;
+}
+
+#mailingList form {
+  width:auto;
 }
 
 #mailingList .btn {
-  color: #fff;
-  background-color: #3d8138;
   border: none;
+  background-color: #3d8138;
+  color: #fff;
 }
 
 #mailingList .btn:hover {
     background-color: #3d7138;
 }
 
-.social {
+#social {
     margin-bottom:20px;
 }
 
-.social img {
+#social img {
     margin: 0 14px;
 }
 
 #mailingList h4 { 
-	padding-bottom: 6px; 
-	padding-left:10px; 
-	padding-right: 10px; 
-	text-shadow:none; 
-	font-weight: 500;
+  padding-right: 10px; 
+  padding-bottom: 6px; 
+  padding-left:10px; 
+  text-shadow:none; 
+  font-weight: 500;
+}
+
+#appName {
+  display: inline; 
+  margin-left: 20px; 
+  vertical-align: middle;
+}
+
+#promise { 
+  display: block; 
+  margin-top: 20px;
+  text-shadow: none;
 }
 
 @media(min-width: 768px) {
-    .mainWrapper { 
-    	display: table; 
+    #content { 
+      display: table; 
     }
 }
 
 @media(max-width: 767px) {
-    .appDescription h2 {
-    	font-size: 22px; 
-    	margin: 40px 20px;
+    #purpose h2 { 
+      margin: 40px 20px;
+      font-size: 22px;
     }
     
     .inner { 
-    	padding: 12px;
+      padding: 12px;
     }
     
     #mailingList .btn {  
-    	display: block;
-		width: 100%;
-		padding-right: 0;
-		padding-left: 0;
-	}
+      display: block;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+  }
 
     #mailingList { 
-    	padding: 24px;
+      padding: 24px;
     }
     
-    #emailAddress {  
-    	height: 46px;
-		padding: 10px 16px;
-		font-size: 18px;
-		line-height: 1.33;
-		border-radius: 6px;
-	}
+    #emailAddress {
+    padding: 10px 16px;  
+      height: 46px;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
 }
