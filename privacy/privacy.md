@@ -7,7 +7,7 @@
 ## Communication With Our Servers
 
 * Bins periodically downloads configuration settings from our servers.
-* All requests send basic technical information to our servers, including your IP address, device model, operating system version, and app version. We do not store this data permanently, but it may be retained in our server logs temporarily or by third-party providers as it passes through our infrastructure. As a precaution, our logs only record a pseudonymized version of your IP address.
+* All network requests send basic technical information to our servers, including your IP address, device model, operating system version, and app version. We do not store this data permanently, but it may be retained in our server logs temporarily or by third-party providers as it passes through our infrastructure. As a precaution, our logs only record a pseudonymized version of your IP address.
 * All communications with our servers are encrypted using HTTPS.
 
 ## Third-Party Services
@@ -22,4 +22,4 @@
 
 If you have any questions about this privacy policy, please email <support@bins.app>.
 
-<small>Last Updated: <time datetime="2024-12-31">December 31, 2024</time></small>
+<small>Last Updated: <time datetime="2025-01-01">January 1, 2025</time></small>
